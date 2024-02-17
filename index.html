@@ -61,17 +61,24 @@
         <ul>
           <li>Inline CSS means changing attributes of one element.</li>
           <li>You can also set up an internal style sheet in the head that will apply to the whole file.</li>
+          <li>External CSS style sheet allows you to keep your rules in a separate file, which makes design changes easier.<br />
+          To use an external style sheet, you use a &lt;link&gt; element placed in the head. Example:</li>
+            <dd>&lt;head&gt;<br />
+            &lt;link rel="stylesheet" href="NAME OF CSS FILE" /&gt;<br />
+            &lt;/head&gt;<br />
+          </dd>
         </ul>
         <h3>Attributes</h3>
         <ul>
           <li>&lt;h1 style="color:red;"&gt;&quot;TEXT&quot;&lt;/h1&gt; = changes the color on one specific header (inline)</li>
-          <li>&lt;head&gt;</li>
-          <dd>&lt;style&gt;</li><br />
+          <li>Example of style sheet in head to change attributes of every h1:
+          <dd>&lt;head&gt;<br />
+            &lt;style&gt;<br />
               h1 &#123;<br />
-                color: red;</li><br />
-              &#125;</li><br />
-            &lt;/style&gt;</li><br />
-         &lt;/head&gt;</li></p></dd>
+                color: red;<br />
+              &#125;<br />
+            &lt;/style&gt;<br />
+         &lt;/head&gt;</dd>
           </li>
         </ul>
       </section>
