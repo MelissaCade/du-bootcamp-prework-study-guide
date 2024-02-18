@@ -20,7 +20,8 @@ h1 {
 h2 {
     text-align: center;
     text-decoration: underline;
-    color: rgb(59, 8, 59)
+    color: rgb(59, 8, 59);
+    font-size: 30px;
 }
 ul {
     padding-left: 40px;
@@ -35,4 +36,11 @@ p {
     margin-left: auto;
     margin-right: auto;
     width: 100px;
+}
+.card{
+    width: 80%;
+    margin: 40px auto;
+    border: 5px solid rgb(59, 8, 59);
+    box-shadow: 5px 10px #888888;
+    padding: 20px;
 }
