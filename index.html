@@ -123,13 +123,52 @@
         <h2>JavaScript</h2>
         <h3>Concepts</h3>
         <ul>
-          <li>Enter future JavaScript concepts here.</li>
+          <li>JavaScript adds functionality to our code and allows users to interact with the page.</li>
+          <li>To apply a JavaScript file to your html code, use this:</li>
+            <dd>&lt;script src="NAME OF .js FILE HERE"&gt;&lt;/script&gt;</dd>
+          <li>The JavaScript link should be at the end of the file. We need to build the architecture (html) first before applying the functionality.</li>
+          <li>Variables are containers that store values, just like in math.</li>
+            <dd>var = Declares a variable, optionally initializing it to a value.</dd>
+            <dd>let = Declares a block-scoped, local variable, optionally initializing it to a value.</dd>
+            <dd>const = Declares a block-scoped, read-only named constant.</dd>
+          <li>JavaScript is case sensitive.</li>
+          <li>In JavaScript, instructions are called "statements" and are separated by semicolons.</li>
         </ul>
         <br />
-        <h3>Heading 2 for whatever the JavaScript version of "elements" is</h3>
+        <h3>Functions</h3>
         <ul>
-          <li>Enter future JavaScript elements here.</li>
+          <li>querySelector() = allows you to select various elements</li>
         </ul>
+        <br />
+        <h3>Properties</h3>
+        <ul>
+          <li>textContent = the content of the text</li>
+        </ul>
+        <br />
+        <h3>Variables (also called Identifiers)</h3>
+        <ul>
+          <li>Identifiers usually start with a letter (upper or lowercase), an underscore, or a dollar sign.</li>
+          <li>Variables should always be declared before they are used.</li>
+          <li>A "scope" is the current context of execution in which values and expressions are "visible" or can be referenced.</li>
+            <dd>Global Scope: The default scope for all code running in script mode.</dd>
+            <dd>Module Scope: The scope for code running in module mode.</dd>
+            <dd>Function Scope: The scope created with a function.</dd>
+            <dd>Block Scope: The scope created with a pair of curly braces (only for variables declared with "let" or "const")</dd>
+          <li>Variables are called "global" if they are outside of a function and available to any other code in the current document. 
+            They are called "local" if created within the function.</li>
+        </ul>
+        <h3>Data Types</h3>
+        <ul>
+          <li>Boolean = true and false</li>
+          <li>null = a special keyword denoting a null value (again, case sensitive)</li>
+          <li>undefined = top-level property whose value is not defined</li>
+          <li>Number = integer or floating point number</li>
+          <li>BigInt = integer with arbitrary precision</li>
+          <li>String = sequence of characters that represent a text value</li>
+          <li>Symbol = data type whose instances are unique and immutable</li>
+          <li>Object</li>
+        </ul>
+        <br />
         <br />
       </section>
       <section class="card" id="cli-section">
@@ -157,5 +196,6 @@
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
