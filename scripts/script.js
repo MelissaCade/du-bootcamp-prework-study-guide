@@ -1,22 +1,26 @@
 const topics = ['HTML', 'CSS', 'Git', 'JavaScript', 'CLI'];
-
-function selectTopic() {
-    if (topics === 'HTML') {
-        console.log("Let's Study HTML!");
-    } else if (topic === 'CSS') {
-        console.log("Let's Study CSS!");
-    } else if (topic === 'Git') {
-        console.log("Let's Study Git!");
-    } else if (topic === 'JavaScript') {
-        console.log("Let's Study JavaScript!");
-    } else if (topic === 'CLI') {
-        console.log("Let's Study CLI!");
-    } else {
-        console.log('Please Try Again!');
-    }
-}
+const randomTopic = topics[Math.floor(Math.random() * topics.length)];
 function listTopics() {
     for(let x = 0; x < topics.length; x++) {
         console.log(topics[x]);
     }
 }
+function selectTopic() {
+    if (randomTopic === 'HTML') {
+        console.log("Let's Study HTML!");
+    } else if (randomTopic === 'CSS') {
+        console.log("Let's Study CSS!");
+    } else if (randomTopic === 'Git') {
+        console.log("Let's Study Git!");
+    } else if (randomTopic === 'JavaScript') {
+        console.log("Let's Study JavaScript!");
+    } else if (randomTopic === 'CLI') {
+        console.log("Let's Study CLI!");
+    } else {
+        console.log('Please Try Again!');
+    }
+}
+console.log('Here are the topics we learned through Prework:');
+listTopics()
+console.log('Which topic should we study first?');
+selectTopic()
