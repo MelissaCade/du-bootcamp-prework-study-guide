@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prework Study Guide</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
     <header id="header">
-      <h1>Prework Study Guide</h1><br />
-      <img src="./assets/Bookwyrm 02.jpg" alt="Profile image of dragon with a pile of books." class="center"/>
-      <p> &#128214; Open the Console to See What's Happening &#128214;</p>
+      <h1>Prework Study Guide</h1>
+      <br />
+      <img
+        src="./assets/Bookwyrm 02.jpg"
+        alt="Profile image of dragon with a pile of books."
+        class="center"
+      />
+      <p>&#128214; Open the Console to See What's Happening &#128214;</p>
     </header>
     <main>
       <section class="card" id="html-section">
@@ -20,38 +25,68 @@
         <ul>
           <li>The head element contains information about the webpage.</li>
           <li>Metadata goes in the head element.</li>
-          <li>The body element represents the visible content shown to the user.</li>
+          <li>
+            The body element represents the visible content shown to the user.
+          </li>
+          <li>
+            Headers (h1, h2, h3, etc) are important for search engines, not text
+            formatting.
+          </li>
+          <li>
+            When setting up a link to a file within the same directory, use "./"
+          </li>
         </ul>
         <br />
         <h3>HTML Elements</h3>
         <ul>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML Elements Reference</a></li>
-          <li>&lt;!DOCTYPE html&gt; = tells browser what coding language we are using. (goes in the head)</li>
+          <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              >HTML Elements Reference</a
+            >
+          </li>
+          <li>
+            &lt;!DOCTYPE html&gt; = tells browser what coding language we are
+            using. (goes in the head)
+          </li>
           <li>&lt;p&gt; = paragraph</li>
           <li>&lt;h1&gt;,&lt;h2&gt;,etc. = headers in descending size</li>
           <li>&lt;ul&gt; = unordered list (bullets)</li>
           <li>&lt;ol&gt; = ordered list (numbered)</li>
-          <li>&lt;dl&gt; = description list (items with descriptions)
-            <dd>you use &lt;dt&gt; for the list item and &lt;dd&gt; for the description on the following line</dd>
+          <li>
+            &lt;dl&gt; = description list (items with descriptions)
+            <dd>
+              you use &lt;dt&gt; for the list item and &lt;dd&gt; for the
+              description on the following line
+            </dd>
           </li>
           <li>&lt;li&gt; = list item</li>
           <li>&lt;u&gt; = underline</li>
           <li>&lt;b&gt; = bold</li>
           <li>&lt;br /&gt; = line break</li>
           <li>&lt;a href = "your link goes here"&gt;Link Text&lt;/a&gt;</li>
-          <li>&lt;img src="link to image"
-            <dd>alt="Name/description of image (alt text)"
-            <br />
-            width="# of pixels"
-            <br />
-            height="# of pixels"
-            <br />
-            /&gt;</dd>
+          <li>
+            &lt;img src="link to image"
+            <dd>
+              alt="Name/description of image (alt text)"
+              <br />
+              width="# of pixels"
+              <br />
+              height="# of pixels"
+              <br />
+              /&gt;
+            </dd>
+          </li>
         </ul>
+
         <br />
         <h3>HTML Symbol Codes</h3>
         <ul>
-          <li><a href="https://www.thoughtco.com/html-code-for-common-symbols-and-signs-2654021">HTML Symbol Codes</a></li>
+          <li>
+            <a
+              href="https://www.thoughtco.com/html-code-for-common-symbols-and-signs-2654021"
+              >HTML Symbol Codes</a
+            >
+          </li>
           <li>& lt ; = &lt; (less than)</li>
           <li>& gt ; = &gt; (greater than)</li>
           <li>& quot ; = &quot; (quotation mark)</li>
@@ -65,62 +100,151 @@
         <h2>CSS</h2>
         <h3>Concepts</h3>
         <ul>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS Reference</a></li>
+          <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              >CSS Reference</a
+            >
+          </li>
           <li>Inline CSS means changing attributes of one element.</li>
-          <li>You can also set up an internal style sheet in the head that will apply to the whole file.</li>
-          <li>External CSS style sheet allows you to keep your rules in a separate file, which makes design changes easier.<br />
-          To use an external style sheet, you use a &lt;link&gt; element placed in the head. Example:</li>
-            <dd>&lt;head&gt;<br />
+          <li>
+            You can also set up an internal style sheet in the head that will
+            apply to the whole file.
+          </li>
+          <li>
+            External CSS style sheet allows you to keep your rules in a separate
+            file, which makes design changes easier.<br />
+            To use an external style sheet, you use a &lt;link&gt; element
+            placed in the head. Example:
+          </li>
+          <dd>
+            &lt;head&gt;<br />
             &lt;link rel="stylesheet" href="NAME OF CSS FILE" /&gt;<br />
             &lt;/head&gt;<br />
           </dd>
+          <li>You can apply multiple classes with a space between.</li>
+          <dd>
+            class = "<u>box</u> <u>box-orange</u>" where "box" and "box-orange"
+            are both classes
+          </dd>
         </ul>
         <br />
+        <h3>Selectors</h3>
+        <ul>
+          <li>* = Universal Selector (applies to entire document)</li>
+          <li>
+            section = Element Selector (applies to all elements of that type)
+          </li>
+          <li>
+            .h1 = Class Selector (applies to any element assigned to that class)
+          </li>
+          <li>
+            #sample = ID Selector (applies to a specific element assigned that
+            ID)
+          </li>
+        </ul>
         <h3>Attributes</h3>
         <ul>
-          <dd><img src="./assets/300-css-rule.png" alt="CSS Rule Description" width="600"/></dd>      
-          <li>&lt;h1 style="color:red;"&gt;&quot;TEXT&quot;&lt;/h1&gt; = changes the color on one specific header (inline)</li>
-          <li>Example of style sheet in head to change attributes of every h1:
-          <dd>&lt;head&gt;<br />
-            &lt;style&gt;<br />
+          <dd>
+            <img
+              src="./assets/300-css-rule.png"
+              alt="CSS Rule Description"
+              width="600"
+            />
+          </dd>
+          <li>
+            &lt;h1 style="color:red;"&gt;&quot;TEXT&quot;&lt;/h1&gt; = changes
+            the color on one specific header (inline)
+          </li>
+          <li>
+            Example of style sheet in head to change attributes of every h1:
+            <dd>
+              &lt;head&gt;<br />
+              &lt;style&gt;<br />
               h1 &#123;<br />
-                color: red;<br />
+              color: red;<br />
               &#125;<br />
-            &lt;/style&gt;<br />
-         &lt;/head&gt;</dd>
+              &lt;/style&gt;<br />
+              &lt;/head&gt;
+            </dd>
           </li>
         </ul>
         <br />
         <h3>Properties</h3>
         <ul>
-          <li>margin = like a margin around a word document. How much space we want to see <b>outside of</b> an element<br />
-          A margin set to zero means no extra space.</li>
-          <li>padding = adds space around the content <b>inside</b> an element.</li>
-          <li>CSS Box Model:<br />
-          <img src="./assets/css-box-model.png" alt="CSS Box Model Diagram" width="600"/>
+          <li>
+            margin = like a margin around a word document. How much space we
+            want to see <b>outside of</b> an element<br />
+            A margin set to zero means no extra space.
+          </li>
+          <li>
+            padding = adds space around the content <b>inside</b> an element.
+          </li>
+          <li>
+            CSS Box Model:<br />
+            <img
+              src="./assets/css-box-model.png"
+              alt="CSS Box Model Diagram"
+              width="600"
+            />
           </li>
         </ul>
         <br />
         <h3>Flexbox</h3>
         <ul>
-          <li>Flexbox Basic Orientation Terminology:<br />
-            <img src="./assets/00-basic-terminology.svg" alt="Flexbox Basic Orientations" width="600"/></li>
-          <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a></li>
-          <li>Provides a way to create more flexible elements in a page to allow for different screen sizes/orientations (aka so you can read it on a desktop or on a tablet or phone).</li>
+          <li>
+            Flexbox Basic Orientation Terminology:<br />
+            <img
+              src="./assets/00-basic-terminology.svg"
+              alt="Flexbox Basic Orientations"
+              width="600"
+            />
+          </li>
+          <li>
+            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+              >A Complete Guide to Flexbox</a
+            >
+          </li>
+          <li>
+            Provides a way to create more flexible elements in a page to allow
+            for different screen sizes/orientations (aka so you can read it on a
+            desktop or on a tablet or phone).
+          </li>
           <li>Flex container = parent element</li>
-            <dd>display = defines a flex container, inline or block depending on given value</dd>
-            <dd>flex-direction = establishes main axis</dd>
-            <dd>flex-wrap = allows items to wrap as needed instead of fitting on one line</dd>
-            <dd>align-items = how flex items are laid out along the cross axis</dd>
-            <dd>align-content = aligns a flex container's lines within when there is extra space in the cross-axis</dd>
+          <dd>
+            display = defines a flex container, inline or block depending on
+            given value
+          </dd>
+          <dd>flex-direction = establishes main axis</dd>
+          <dd>
+            flex-wrap = allows items to wrap as needed instead of fitting on one
+            line
+          </dd>
+          <dd>
+            align-items = how flex items are laid out along the cross axis
+          </dd>
+          <dd>
+            align-content = aligns a flex container's lines within when there is
+            extra space in the cross-axis
+          </dd>
           <li>Flex items = the stuff inside a container</li>
-            <dd>order = the order items appear in the container if not using the default order (using the direction/alignment of the container)</dd>
-            <dd>flex-grow = ability for an item to grow if necessary</dd>
-            <dd>flex-shrink = ability for an item to shrink if necessary</dd>
-            <dd>flex-basis = the default size of an element before the remaining space is distributed</dd>
-            <dd>align-self = allows the default alignment to be overriden for individual items</dd>
-            <dd>gap, row-gap, column-gap = controls the space <i>only</i>between flex items</dd>
-
+          <dd>
+            order = the order items appear in the container if not using the
+            default order (using the direction/alignment of the container)
+          </dd>
+          <dd>flex-grow = ability for an item to grow if necessary</dd>
+          <dd>flex-shrink = ability for an item to shrink if necessary</dd>
+          <dd>
+            flex-basis = the default size of an element before the remaining
+            space is distributed
+          </dd>
+          <dd>
+            align-self = allows the default alignment to be overriden for
+            individual items
+          </dd>
+          <dd>
+            gap, row-gap, column-gap = controls the space <i>only</i>between
+            flex items
+          </dd>
         </ul>
         <br />
       </section>
@@ -133,17 +257,40 @@
         <br />
         <h3>Helpful GIT Commands</h3>
         <ul>
-          <li>git status = tells you which branch you're on and whether you're up to date</li>
-          <li>git checkout -b "NAME" = creates new branch called "NAME" (-b means branch)</li>
-          <li>git checkout main = makes the main branch your current working branch</li>
-          <li>git add -A = tells GIT to stage all files in the current folder</li>
+          <li>
+            git status = tells you which branch you're on and whether you're up
+            to date
+          </li>
+          <li>
+            git checkout -b "NAME" = creates new branch called "NAME" (-b means
+            branch)
+          </li>
+          <li>
+            git checkout main = makes the main branch your current working
+            branch
+          </li>
+          <li>
+            git add -A = tells GIT to stage all files in the current folder
+          </li>
           <li>git add . = allows GIT to track changes of your code</li>
-          <li>git commit -m "COMMIT MESSAGE HERE" = creates a commit with a message</li>
-          <li>git pull origin main = checks whether branch is up to date (helps avoid conflicts)</li>
+          <li>
+            git commit -m "COMMIT MESSAGE HERE" = creates a commit with a
+            message
+          </li>
+          <li>
+            git pull origin main = checks whether branch is up to date (helps
+            avoid conflicts)
+          </li>
           <li>git push = pushes the commits to your remote repo</li>
           <li>git push origin "NAME" = pushes commit to GITHUB</li>
-          <li>git clone "SSH link from new depository on GITHUB" = clones depository to your local divice</li>
-          <li>git fetch = fetches from a repository or group of repositories, but stays local</li>
+          <li>
+            git clone "SSH link from new depository on GITHUB" = clones
+            depository to your local divice
+          </li>
+          <li>
+            git fetch = fetches from a repository or group of repositories, but
+            stays local
+          </li>
           <li>git merge = merges a branch into the main</li>
         </ul>
         <br />
@@ -152,17 +299,37 @@
         <h2>JavaScript</h2>
         <h3>Concepts</h3>
         <ul>
-          <li>JavaScript adds functionality to our code and allows users to interact with the page.</li>
+          <li>
+            JavaScript adds functionality to our code and allows users to
+            interact with the page.
+          </li>
           <li>To apply a JavaScript file to your html code, use this:</li>
-            <dd>&lt;script src="NAME OF .js FILE HERE"&gt;&lt;/script&gt;</dd>
-          <li>The JavaScript link should be at the end of the file. We need to build the architecture (html) first before applying the functionality.</li>
-          <li>Variables are containers that store values, just like in math.</li>
-            <dd>var = Declares a variable, optionally initializing it to a value.</dd>
-            <dd>let = Declares a block-scoped, local variable, optionally initializing it to a value.</dd>
-            <dd>const = Declares a block-scoped, read-only named constant.</dd>
+          <dd>&lt;script src="NAME OF .js FILE HERE"&gt;&lt;/script&gt;</dd>
+          <li>
+            The JavaScript link should be at the end of the file. We need to
+            build the architecture (html) first before applying the
+            functionality.
+          </li>
+          <li>
+            Variables are containers that store values, just like in math.
+          </li>
+          <dd>
+            var = Declares a variable, optionally initializing it to a value.
+          </dd>
+          <dd>
+            let = Declares a block-scoped, local variable, optionally
+            initializing it to a value.
+          </dd>
+          <dd>const = Declares a block-scoped, read-only named constant.</dd>
           <li>JavaScript is case sensitive.</li>
-          <li>In JavaScript, instructions are called "statements" and are separated by semicolons.</li>
-          <li>Control Flow refers to the order in which a computer executes code. JS executes top-down.</li>
+          <li>
+            In JavaScript, instructions are called "statements" and are
+            separated by semicolons.
+          </li>
+          <li>
+            Control Flow refers to the order in which a computer executes code.
+            JS executes top-down.
+          </li>
         </ul>
         <br />
         <h3>Functions</h3>
@@ -177,21 +344,42 @@
         <br />
         <h3>Variables (also called Identifiers)</h3>
         <ul>
-          <li>A variable is a named container that allows us to store data in our code.</li>
-          <li>Identifiers usually start with a letter (upper or lowercase), an underscore, or a dollar sign.</li>
+          <li>
+            A variable is a named container that allows us to store data in our
+            code.
+          </li>
+          <li>
+            Identifiers usually start with a letter (upper or lowercase), an
+            underscore, or a dollar sign.
+          </li>
           <li>Variables should always be declared before they are used.</li>
-          <li>A "scope" is the current context of execution in which values and expressions are "visible" or can be referenced.</li>
-            <dd>Global Scope: The default scope for all code running in script mode.</dd>
-            <dd>Module Scope: The scope for code running in module mode.</dd>
-            <dd>Function Scope: The scope created with a function.</dd>
-            <dd>Block Scope: The scope created with a pair of curly braces (only for variables declared with "let" or "const")</dd>
-          <li>Variables are called "global" if they are outside of a function and available to any other code in the current document. 
-            They are called "local" if created within the function.</li>
-        </ul><br />
+          <li>
+            A "scope" is the current context of execution in which values and
+            expressions are "visible" or can be referenced.
+          </li>
+          <dd>
+            Global Scope: The default scope for all code running in script mode.
+          </dd>
+          <dd>Module Scope: The scope for code running in module mode.</dd>
+          <dd>Function Scope: The scope created with a function.</dd>
+          <dd>
+            Block Scope: The scope created with a pair of curly braces (only for
+            variables declared with "let" or "const")
+          </dd>
+          <li>
+            Variables are called "global" if they are outside of a function and
+            available to any other code in the current document. They are called
+            "local" if created within the function.
+          </li>
+        </ul>
+        <br />
         <h3>Data Types</h3>
         <ul>
           <li>Boolean = true and false</li>
-          <li>null = a special keyword denoting a null value (again, case sensitive)</li>
+          <li>
+            null = a special keyword denoting a null value (again, case
+            sensitive)
+          </li>
           <li>undefined = top-level property whose value is not defined</li>
           <li>Number = integer or floating point number</li>
           <li>BigInt = integer with arbitrary precision</li>
@@ -207,7 +395,11 @@
         <h3>Concepts</h3>
         <ul>
           <li>CLI stands for Command-Line Interface.</li>
-          <li>If you hit "tab" after entering part of the file name, it will autopopulate.</li>
+          <li>
+            If you hit "tab" after entering part of the file name, it will
+            autopopulate.
+          </li>
+          <li>You can open the CLI in VSCode using CTRL + Shift + ~ .</li>
         </ul>
         <br />
         <h3>Useful Commands to Navigate CLI</h3>
@@ -217,13 +409,29 @@
           <li>cd "folder" = drill down to the "folder"</li>
           <li>cd .. = navigate backwards one directory at a time</li>
           <li>mkdir = create directory (folder) in currect directory</li>
-          <li>pwd = print working directory (see what folder you're currently in)</li>
-          <li>touch "name-of-file.txt" = create text file called "name-of-file"</li>
-          <li>start "name-of-file.txt" = opens "name-of-file.txt" in text editor</li>
-          <li>clear = clears the CLI screen of previous instructions/interactions</li>
-          <li>mv "name-of-directory1" "name-of-directory2" = moves directory1 into directory2</li>
-          <li>cp -r "name-of-thing" "target-directory" = copies thing to directory</li>
-          <dd>the -r means "recursive" which copies everything inside, if you are copying a directory</dd>
+          <li>
+            pwd = print working directory (see what folder you're currently in)
+          </li>
+          <li>
+            touch "name-of-file.txt" = create text file called "name-of-file"
+          </li>
+          <li>
+            start "name-of-file.txt" = opens "name-of-file.txt" in text editor
+          </li>
+          <li>
+            clear = clears the CLI screen of previous instructions/interactions
+          </li>
+          <li>
+            mv "name-of-directory1" "name-of-directory2" = moves directory1 into
+            directory2
+          </li>
+          <li>
+            cp -r "name-of-thing" "target-directory" = copies thing to directory
+          </li>
+          <dd>
+            the -r means "recursive" which copies everything inside, if you are
+            copying a directory
+          </dd>
         </ul>
         <br />
       </section>
